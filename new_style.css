@@ -65,11 +65,11 @@ section{
 }
 
 .person-picture{
-    width:125px;
-    height:125px;
+    width:150px;
+    height:150px;
     object-fit:cover;
     border-radius:50%;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    /*-webkit-filter: grayscale(100%);*/ /* Safari 6.0 - 9.0 */
     /*filter: grayscale(100%);*/
 }
 
