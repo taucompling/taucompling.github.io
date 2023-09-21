@@ -1,11 +1,16 @@
+h1 {
+    font-size: 3em;
+}
+.title {
+    text-align: center;
+}
 h3 {
-    font-size: 22px;
+    font-size: 1.7em;
     line-height: 2;
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 1.2em;
     line-height: 2;
 }
 
@@ -15,10 +20,11 @@ li {
 
 body{
     background: #e5e5e5;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Ubuntu', sans-serif;
     color: #3E065F;
 }
 
