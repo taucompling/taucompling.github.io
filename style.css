@@ -1,137 +1,156 @@
-html {
-    overflow-y: scroll;
+h1 {
+    font-size: 3em;
 }
-
-body {
-    font-family: Georgia,"Bitstream Charter",serif;
-    background-color: #fcfcfc;
-    background-image: url(images/bg.png);
-    background-repeat: repeat-x;
-    background-position: bottom;
-    background-attachment: fixed;
-    height: 100%;
-}
-
-.page {
-    margin: 0 auto;
-    width : 700px;
-    padding-bottom : 80px;
-}
-
-.name{
-    font-size: 30px;
-    margin: 30px auto 20px;
-    color: #000;
+.title {
     text-align: center;
 }
-
-.pagecontent{
-    text-align: left;
-    font-size: 16px;
-    margin-right: 15px;
-    margin-left: 15px;
+h3 {
+    font-size: 1.7em;
+    line-height: 2;
 }
 
-#nav ul li {
-    list-style: none;
-} 
-#nav {
-    width: 100%;
-    height: 35px;
-    margin: 0 0 3em 0;
+p {
+    font-size: 1.2em;
+    line-height: 2;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+body{
+    background: #e5e5e5;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #3E065F;
+}
+
+h6{
+    margin-top: 7px;
+}
+
+.text-div {
+    margin: 15px;
+
+}
+
+.container-lg {
     padding: 0;
-    list-style: none;
-    background-color: #2f2f2f;
-    border-bottom: 1px solid #ccc; 
-    border-top: 1px solid #ccc;
-    border-radius: 10px;
-    background-image: linear-gradient(0deg, #333, #000);
-    text-shadow: 0 1px 1px #000;
 }
 
-#nav li {
-    float: left;
-}
-#nav li a {
-    display: block;
-    padding: 8px 15px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #f2f2f2;
-    border-right: 1px solid #ccc;
-}
-#nav li a:hover {
-    color: #c66;
+section{
+    margin-top: 2rem;
 }
 
-h4, h3 {
-    text-shadow: 0px 2px 2px rgba(0,0,0,0.2);
-}
-    
+.content {
+    margin: 40px 40px 0 40px;
 
-/* -- Home Page -- */
-
-.brain {
-    float: right;
-    margin-left: 30px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.homecontent {
-	text-align: justify;
-    font-size: 16px;
-    margin-right: 15px;
-    margin-left: 15px;
-	
+.syllabus {
+    font-size: 12px;
 }
 
-
-/* -- People Page -- */
-
-.people-list {
-    padding: 0;
-    margin: auto;
-    width: 70%;
+.card-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.people-list h3 {
-    margin: 0;
+.home {
+    background: white;
+    /*padding: 50px 20px;*/
 }
 
-.people-list>li {
-    list-style: none;
+.people-container {
+    text-align: center;
+    width: 80%;
 }
 
-.people-section-title {
-    border-bottom: 1px solid #666;
+.person-picture{
+    width:135px;
+    height:135px;
+    object-fit:cover;
+    border-radius:50%;
+    /*-webkit-filter: grayscale(100%);*/ /* Safari 6.0 - 9.0 */
+    /*filter: grayscale(100%);*/
 }
 
-.person-box {
-    display: block;
-    height: 125px;
-    margin: 20px 0;
+.person-text{
+    line-height: 1 !important;
 }
 
-.person-box h4 {
-    margin: 0;
+a{
+    color: #3E065F;
 }
 
-
-.person-picture {
-    border: 1px solid rgba(2, 26, 64, 0.7);
-    border-radius: 10px;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
-    float: right;
-    width: 160px;
-    height: 120px;
-    overflow: hidden;
+a:hover{
+    /*line-height: 1.5;*/
+    color: #9D84B7;
 }
 
+.publication-list {
+    width: 85%;
+}
 
-/* -- Publications Page -- */
+#contact {
+    text-align: center;
+    padding-bottom: 1rem;
+}
 
-ul.publication-list>li {
-    margin-bottom: 18px;
+.inline-icon {
+    vertical-align: bottom;
+    font-size: 20px !important;
+}
+
+@media (max-width: 1199.98px) {
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    li {
+        font-size: 14px;
+    }
+
+    .content {
+        margin: 15px 15px 0 15px;
+
+    }
+
+    h1 {
+        text-align: center;
+        font-size: calc(1rem + 1vw);
+    }
+
+    h3{
+        font-size: 18px;
+    }
+
+    .contact {
+        font-size: 12px;
+    }
+
+    .intro {
+        text-justify: inter-character;
+    }
+
+    .people-container {
+        width: 100%;
+    }
+
 }
