@@ -1,9 +1,14 @@
+body {
+    background: #e5e5e5;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+
 h1 {
     font-size: 3em;
-}
-.title {
     text-align: center;
 }
+
 h3 {
     font-size: 1.7em;
     line-height: 2;
@@ -18,36 +23,28 @@ li {
     margin-bottom: 10px;
 }
 
-body{
-    background: #e5e5e5;
-    font-family: 'Helvetica Neue', sans-serif;
-    font-weight: 400;
-}
-
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, a {
     color: #3E065F;
 }
 
-h6{
+h6 {
     margin-top: 7px;
 }
 
-.text-div {
-    margin: 15px;
-
-}
-
-.container-lg {
-    padding: 0;
-}
-
-section{
+section {
     margin-top: 2rem;
 }
 
 .content {
     margin: 40px 40px 0 40px;
+}
 
+.text-div {
+    margin: 15px;
+}
+
+.container-lg {
+    padding: 0;
 }
 
 .syllabus {
@@ -56,13 +53,12 @@ section{
 
 .card-body {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
+    flex-direction: row;
 }
 
 .home {
     background: white;
-    /*padding: 50px 20px;*/
 }
 
 .people-container {
@@ -70,25 +66,18 @@ section{
     width: 80%;
 }
 
-.person-picture{
-    width:135px;
-    height:135px;
-    object-fit:cover;
-    border-radius:50%;
-    /*-webkit-filter: grayscale(100%);*/ /* Safari 6.0 - 9.0 */
-    /*filter: grayscale(100%);*/
+.person-picture {
+    width: 135px;
+    height: 135px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
-.person-text{
-    line-height: 1 !important;
+.person-text {
+    line-height: 1;
 }
 
-a{
-    color: #3E065F;
-}
-
-a:hover{
-    /*line-height: 1.5;*/
+a:hover {
     color: #9D84B7;
 }
 
@@ -103,41 +92,33 @@ a:hover{
 
 .inline-icon {
     vertical-align: bottom;
-    font-size: 20px !important;
+    font-size: 20px;
 }
 
 @media (max-width: 1199.98px) {
-
     .card-body {
-        display: flex;
         flex-direction: column;
-        justify-content: space-around;
     }
-
 }
 
 @media (max-width: 480px) {
-
-    p {
+    p, li {
         font-size: 14px;
-        line-height: 1.5;
     }
 
-    li {
-        font-size: 14px;
+    p {
+        line-height: 1.5;
     }
 
     .content {
         margin: 15px 15px 0 15px;
-
     }
 
     h1 {
-        text-align: center;
         font-size: calc(1rem + 1vw);
     }
 
-    h3{
+    h3 {
         font-size: 18px;
     }
 
@@ -152,5 +133,4 @@ a:hover{
     .people-container {
         width: 100%;
     }
-
 }
