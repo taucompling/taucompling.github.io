@@ -1,16 +1,13 @@
 :root {
     --primary-color: #4C2C69;
-    --accent-color: #A56CC1;
     --background-color: #f7f7f7;
     --text-color: #333;
     --heading-color: #2C2C54;
     --secondary-text-color: #4A4A4A;
     --light-text-color: #555;
     --link-hover-color: #A56CC1;
-    --font-family: 'Helvetica Neue', Arial, sans-serif;
+    --font-family: 'Roboto', sans-serif;
     --font-size-base: 1rem;
-    --font-size-lg: 2.5rem;
-    --font-size-sm: 0.875rem;
     --line-height-base: 1.6;
     --line-height-lg: 1.8;
     --margin-base: 1rem;
@@ -21,6 +18,7 @@
 body {
     background: var(--background-color);
     font-family: var(--font-family);
+    font-size: var(--font-size-base);
     font-weight: 400;
     color: var(--text-color);
     line-height: var(--line-height-base);
@@ -28,8 +26,16 @@ body {
     margin: 0;
 }
 
+a {
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+}
+
 h1 {
-    font-size: var(--font-size-lg);
     text-align: center;
     font-weight: 600;
     color: var(--heading-color);
@@ -37,14 +43,12 @@ h1 {
 }
 
 h3 {
-    font-size: 1.8rem;
     line-height: var(--line-height-lg);
     margin-bottom: 1.2rem;
     color: var(--secondary-text-color);
 }
 
 p {
-    font-size: var(--font-size-base);
     line-height: var(--line-height-lg);
     margin-bottom: var(--margin-base);
     color: var(--light-text-color);
@@ -52,16 +56,10 @@ p {
 
 li {
     margin-bottom: 0.8rem;
-    font-size: var(--font-size-base);
-}
-
-h1, h2, h3, h4, h5, h6, a {
-    color: var(--primary-color);
 }
 
 h6 {
     margin-top: 0.5rem;
-    font-size: 1.1rem;
     font-weight: 500;
     color: #666;
 }
@@ -79,14 +77,6 @@ section {
 
 .text-div {
     margin: 1.5rem;
-}
-
-.container-lg {
-    padding: 0;
-}
-
-.syllabus {
-    font-size: var(--font-size-sm);
 }
 
 .card-body {
@@ -117,16 +107,7 @@ section {
 
 .person-text {
     line-height: 1.4;
-    font-size: var(--font-size-base);
     margin-top: 0.5rem;
-}
-
-a {
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: var(--link-hover-color);
 }
 
 .publication-list {
@@ -141,7 +122,6 @@ a:hover {
 
 .inline-icon {
     vertical-align: middle;
-    font-size: 1.25rem;
 }
 
 @media (max-width: 1199.98px) {
@@ -170,16 +150,16 @@ a:hover {
 }
 
 @media (max-width: 480px) {
-    p, li {
-        font-size: 0.875rem;
-    }
-
     h1 {
         font-size: calc(1.5rem + 1vw);
     }
 
     h3 {
         font-size: 1.25rem;
+    }
+
+    p, li {
+        font-size: 0.875rem;
     }
 
     .contact {
