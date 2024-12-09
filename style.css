@@ -1,156 +1,172 @@
+:root {
+    --primary-color: #4C2C69;
+    --background-color: #f7f7f7;
+    --text-color: #333;
+    --heading-color: #2C2C54;
+    --secondary-text-color: #4A4A4A;
+    --light-text-color: #555;
+    --link-hover-color: #A56CC1;
+    --font-family: 'Roboto', sans-serif;
+    --font-size-base: 1rem;
+    --line-height-base: 1.6;
+    --line-height-lg: 1.8;
+    --margin-base: 1rem;
+    --margin-lg: 2.5rem;
+    --max-content-width: 1200px;
+}
+
+body {
+    background: var(--background-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: var(--line-height-base);
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+}
+
 h1 {
-    font-size: 3em;
-}
-.title {
     text-align: center;
+    font-weight: 600;
+    color: var(--heading-color);
+    margin-bottom: 1.5rem;
 }
+
 h3 {
-    font-size: 1.7em;
-    line-height: 2;
+    line-height: var(--line-height-lg);
+    margin-bottom: 1.2rem;
+    color: var(--secondary-text-color);
 }
 
 p {
-    font-size: 1.2em;
-    line-height: 2;
+    line-height: var(--line-height-lg);
+    margin-bottom: var(--margin-base);
+    color: var(--light-text-color);
 }
 
 li {
-    margin-bottom: 10px;
+    margin-bottom: 0.8rem;
 }
 
-body{
-    background: #e5e5e5;
-    font-family: 'Helvetica Neue', sans-serif;
-    font-weight: 400;
+h6 {
+    margin-top: 0.5rem;
+    font-weight: 500;
+    color: #666;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #3E065F;
-}
-
-h6{
-    margin-top: 7px;
-}
-
-.text-div {
-    margin: 15px;
-
-}
-
-.container-lg {
-    padding: 0;
-}
-
-section{
-    margin-top: 2rem;
+section {
+    margin-top: 3rem;
+    padding: 0 1.5rem;
 }
 
 .content {
-    margin: 40px 40px 0 40px;
-
+    margin: var(--margin-lg) auto;
+    max-width: var(--max-content-width);
+    padding: 0 1rem;
 }
 
-.syllabus {
-    font-size: 12px;
+.text-div {
+    margin: 1.5rem;
 }
 
 .card-body {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .home {
     background: white;
-    /*padding: 50px 20px;*/
+    padding: 2rem 0;
 }
 
 .people-container {
     text-align: center;
-    width: 80%;
+    width: 75%;
+    margin: 0 auto;
 }
 
-.person-picture{
-    width:135px;
-    height:135px;
-    object-fit:cover;
-    border-radius:50%;
-    /*-webkit-filter: grayscale(100%);*/ /* Safari 6.0 - 9.0 */
-    /*filter: grayscale(100%);*/
+.person-picture {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.person-text{
-    line-height: 1 !important;
-}
-
-a{
-    color: #3E065F;
-}
-
-a:hover{
-    /*line-height: 1.5;*/
-    color: #9D84B7;
+.person-text {
+    line-height: 1.4;
+    margin-top: 0.5rem;
 }
 
 .publication-list {
-    width: 85%;
+    width: 90%;
+    margin: 0 auto;
 }
 
 #contact {
     text-align: center;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 
 .inline-icon {
-    vertical-align: bottom;
-    font-size: 20px !important;
+    vertical-align: middle;
 }
 
 @media (max-width: 1199.98px) {
-
     .card-body {
-        display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        gap: 1rem;
     }
-
 }
 
-@media (max-width: 480px) {
-
-    p {
-        font-size: 14px;
-        line-height: 1.5;
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
     }
 
-    li {
-        font-size: 14px;
+    h3 {
+        font-size: 1.5rem;
     }
 
     .content {
-        margin: 15px 15px 0 15px;
-
+        margin: 1rem 1rem 0 1rem;
     }
 
+    p, li {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
     h1 {
-        text-align: center;
-        font-size: calc(1rem + 1vw);
+        font-size: calc(1.5rem + 1vw);
     }
 
-    h3{
-        font-size: 18px;
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    p, li {
+        font-size: 0.875rem;
     }
 
     .contact {
-        font-size: 12px;
-    }
-
-    .intro {
-        text-justify: inter-character;
+        font-size: 0.9rem;
     }
 
     .people-container {
         width: 100%;
     }
-
 }
