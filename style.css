@@ -24,8 +24,6 @@ a {
 
 a:hover {
     color: var(--primary-light);
-    transform: translateX(2px);
-    display: inline-block;
 }
 
 .home {
